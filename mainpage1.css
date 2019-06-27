@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding :0;
+    
+    text-decoration:none;
+    color: white;
+}
+body
+    {
+       
+        font-family: Arial;
+        font-size: 100%;
+        text-decoration:none;
+        
+    }
+img {
+    max-width: 100%; 
+    image-resolution: snap;/* can expand only to its originally size */
+}
+.image{
+    text-align: center;
+    
+}
+.navigation-bar ul 
+{
+    padding: 4px;
+    margin: 0px;
+    list-style: none;
+}
+
+.navigation-bar ul li
+{
+    float:left; /*align to  left*/
+    height:40px;
+    width:250px;
+    background-color:black;
+    opacity: .75;
+    line-height: 40px;
+    text-align: center;
+    font-size:18px;
+    margin-right: 3px;
+    
+}
+/*main page navigation bar */
+.navigation-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+    display: block;
+   
+}
+.navigation-bar ul li a:hover
+{
+    background-color: green;
+}
+.navigation-bar ul li ul li
+{
+    display: none;
+    
+}
+.navigation-bar ul li:hover ul li
+{   
+    transition: .09s;
+    display:block;
+    color: blue;
+}
+/*.menubar {
+            color : white;
+            text-align:center;
+            text-decoration:none;
+        }
+.button {
+            background: #777777;
+            width: 24% ;   /*Instead of 25 % we give 24 so that 1% is for margin --*/
+/*            margin: 0  .5%; /* 0 on top and .5 on either side making it 25%in a whole */
+/*            float : left; /*start from left to right -->*/
+/*            text-decoration:none; 
+            color: white;
+        }
+
+*/
+.topics1
+{   
+    font-size:0;/*to get rid of spacing */
+    width:936px; /*75 * 3 +12=237 for margin* so we get 3 in a line */
+    margin:0 auto; /*responsive . no margin left and rigt*/
+    padding:0px;
+}
+.topics1 a {
+    margin: 2px; /*margin between 2 images */
+    border:4px solid transparent;  /*  75px +4(margin) + 8 =87 *3 = 261*/
+    display:inline-block;
+     border:4px solid transparent;  /*for the hover border*/
+    opacity: 0.75;
+    transition: all .3s ease-in;
+    background-size: 100%;
+    
+}
+
+.topics1 a:hover
+{
+    border-color: white;
+    opacity: 1.0;
+    background-size:110%;
+}
+
+.topics1 img
+{
+    border-radius: 10px; /*to give it a corve*/
+}
+.slide imgs
+{   
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    height: 20%;
+    width:100%;
+    text-align: right;
+    padding-left: 200px;
+    
+    
+}
+
+/* how it done section */
+.howitsdone 
+{   
+  
+    position:relative;
+    width: 300px;
+    height:250px;
+    width:max;
+    margin :4px;
+    background-position:center;
+    background-size: 100%;
+    float:left; 
+    transition: 0.5s;
+    
+    padding: 4px;
+    border:5px solid transparent;
+    margin:50;
+    padding-left: 100px;
+    
+  
+    
+}
+.howitsdone:hover 
+{
+    background-size:110%;
+}
+.howitsdone:after /*for the background*/
+{   
+   position: absolute;  
+    top=0;
+    text-align: left;
+    bottom:0;
+    left:0;
+    right:0; 
+    overflow="hidden";
+    white-space: pre-wrap;
+    background-color: rgba(0,0,0,0.6);
+    color:#fff;
+    padding:8px;
+    border-radius: 10px;  
+    word-wrap: break-word;
+    content:attr(data-text);
+    padding: 10px;
+    opacity:0;
+}
+.howitsdone:hover:after
+{
+    opacity:1;
+    top:0;
+    padding:8px;
+}
+
+.howitsdone:first-line
+{
+    color:white;
+    font-weight: 100;
+    font-size: 0.5;
+}
+.bottom-menu
+    {
+        font-size: 1em;
+        bottom: 0;/*to make the menu stick to the bottom */
+        position : fixed;
+        width: 100% /*entire width of the menu remains the same */
+        
+        
+    }
+.bottom-menu ul a li{ /*bottom menu which is unordfered list we give the folowing properties */
+    color : white;
+    text-decoration: none ; /*we do not want underlined link */
+    float :left;
+    text-align: center;
+    list-style: none; /* no symbols or bullets */
+    width : 16.8%; /* 5 list */
+    padding : 1.60%;
+    height: 100%;
+    background-color: black;
+    opacity: .75;
+    border-bottom: 2px solid black;
+}
+
+.bottom-menu ul a li.selected /*to make the selected icon more visible and gives a red outline*/
+/* when we select a option and make it completly opaque and give a red border */
+{ 
+    opacity :1;
+    border-bottom: : 2px solid #cc0000;
+}
+
+.bottom-menu ul a li{ 
+    max-height : 1.6em ; /* how big we want the buttons to appear */
+    padding-top: 0.15em; 
+}
+
+

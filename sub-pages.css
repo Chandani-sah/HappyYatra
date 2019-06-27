@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding :0;
+    text-align: center;
+    text-decoration:none;
+}
+body
+    {
+        background: url("http://portland.nationalpti.edu/wp-content/uploads/2014/06/grey-background-tile-643.jpg")repeat; /* repeat will tell the page to repeat the whole image in all direction to make it seem liek on big image spread equally */
+        font-family: Arial;
+        font-size: 100%;
+        
+        
+    }
+.exchange{
+    font-family: fantasy;
+    text-align: center;
+    color : azure;
+}
+
+.button
+{
+    text-decoration: none;
+}
+
+.bottom-menu
+    {
+        font-size: 1em;
+        bottom: 0;/*to make the menu stick to the bottom */
+        position : fixed;
+        width: 100% /*entire width of the menu remains the same */
+        
+        
+    }
+.bottom-menu ul a li{ /*bottom menu which is unordfered list we give the folowing properties */
+    color : azure;
+    text-decoration: none ; /*we do not want underlined link */
+    float :left;
+    text-align: center;
+    list-style: none; /* no symbols or bullets */
+    width : 16.8%; /* 5 list */
+    padding : 1.60%;
+    height: 100%;
+    background-color: black;
+    opacity: .75;
+    border-bottom: 2px solid black;
+}
+.bottom-menu ul a li{ 
+    max-height : 1.6em ; /* how big we want the buttons to appear */
+    padding-top: 0.15em; 
+}
+.exchangeform{
+    text-align: center;
+    color :aliceblue;
+    text-decoration:none;
+    background : ;
+
+    width: 50% ;  
+    margin: 0 .5%; 
+    float: none; 
+    color: aliceblue;
+    opacity: 0.7;
+    height:25%;
+    width: 75%;
+    background-color: grey;
+    
+}
+.image
+{
+    text-align: center;
+    width: 50% ;  
+    padding: 2%;
+    
+}
+

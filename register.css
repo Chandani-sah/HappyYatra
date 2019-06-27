@@ -1,0 +1,154 @@
+/*for login page*/
+body
+{   
+
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    font-family: sans-serif;
+    background: url(pictures/register.jgp.jpg);
+    max-width: auto;
+    width:100%;
+    overflow:hidden;
+    background-size: cover;
+    background-position: top;
+
+}
+
+.loginbox
+{
+    position: absolute;     
+    top:50%;   /*fro the entire box relocation */
+    left:50% ;
+    transform: translate(-50%, -50% ); /*realtive to box*/
+    width:350px;  /*of semi transparent box*/
+    height:550px;
+    padding: 40px 40px; /*80 0n top 40 on sides wrt the image and the box*/
+    box-sizing:border-box;
+    background-color:rgba(0,0,0,.5);
+    border:2px solid;
+    box-shadow: 0 15px 40 px rgba(0,0,0,0.5);
+     /*black border around the login and as we gae no color its transparent*/
+}
+
+.user
+{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    overflow: hidden;
+    
+    position: absolute;
+    top: -50px ; /*the use image movement*/
+    left: 120px ;
+}
+h2
+{
+    margin: 0;
+    padding: :0px;
+    text-align: center;
+    color: ivory;
+    
+
+}
+.loginbox p 
+
+{
+    margin: 0;
+    padding: 0px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+.loginbox placeholder
+{
+    color: aliceblue;
+}
+.loginbox input  /*for the input text boxes*/
+{
+    width: 100%;
+    margin-bottom: 10px;
+    
+    
+}
+
+/*text visible when we type in the email or password*/
+.loginbox input[type="text"],
+.loginbox input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color:aliceblue;
+    font-size: 16px;
+}
+
+/*submit button */
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline:none;
+    height:40px;
+    color: #fff;
+    font-size: 16px;
+    background: #ff267e;
+    cursor: pointer;
+    border-radius :20px;
+    
+}
+/*submit button on hover*/
+.loginbox input[type="submit"]:hover
+{
+    background: #efed40;
+    color:#262626;
+}
+/*for forgot password*/
+.loginbox a
+{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.bottom-menu
+    {
+        font-size: 1em;
+        bottom: 0;/*to make the menu stick to the bottom */
+        position : fixed;
+        width: 95% /*entire width of the menu remains the same */
+        
+        
+    }
+.bottom-menu ul a li{ /*bottom menu which is unordfered list we give the folowing properties */
+    color : white;
+    text-decoration: none ; /*we do not want underlined link */
+    float :left;
+    text-align: center;
+    list-style: none; /* no symbols or bullets */
+    width : 16.8%; /* 5 list */
+    padding : 0.60%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+    border-bottom: 2px solid black;
+    padding-left: .5%px;
+}
+
+/*Dosent work correctly*/
+.bottom-menu :hover /*to make the selected icon more visible and gives a red outline*/
+/* when we select a option and make it completly opaque and give a red border */
+{ 
+    opacity :1;
+   /* border-bottom: solid red;  problem with alignment */
+    color: beige;
+    
+    
+}
+
+.bottom-menu ul a li{ 
+    max-height : 1.6em ; /* how big we want the buttons to appear */
+    padding-top: 0.15em; 
+}
